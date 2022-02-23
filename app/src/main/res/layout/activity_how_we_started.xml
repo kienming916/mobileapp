@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F2E6C6"
+    android:id="@+id/interface3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/andlogo"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tkklogo"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="How we started"
+            android:textColor="#B16F5B"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="15"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="1961"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.07"
+            android:text="Mr. Tan Kah Kee, a well-known philanthropist and an outstanding Chinese leader in Southeast Asia, passed away in Beijing on 12 Aug 1961. The Singapore Hokkien Huay Kuan, together with 50 other Chinese associations, urged the Singapore Chinese Chamber of Commerce and Industry to hold a memorial service for Mr. Tan Kah Kee In view of his invaluable contribution to the promotion of entrepreneurship, social reforms, cultural and educational developments as well as political and charitable movements.\n\nThe memorial service was held on 10 September 1961. More than 5,000 representatives from over 280 associations and clans came to pay their respects. During the event, the Tan Kah Kee Scholarship Fund was established through donations of S$100,000 by the participants, with the aim of keeping Tan Kah Kee’s spirit of education alive."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="1968"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.07"
+            android:text="In April 1968, the Tan Kah Kee Scholarship Fund officially became the Tan Kah Kee Scholarship Trust Fund, offering scholarships for the four higher learning institutions then. However, the small capital of the Fund limited the amount of contributions the Trustees could render."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="1982"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.07"
+            android:text="In February 1982, the Tan Kah Kee Foundation was set up when it was granted Institution of Public Character status by the government and was allowed to raise an endowment fund of S$8 million. The mission of the Foundation is to carry on the charity works and to foster the Tan Kah Kee spirit in entrepreneurship and dedication to education."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="2002"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.07"
+            android:text="In commemoration of the 20th Anniversary of Tan Kah kee Foundation, a series of celebratory activities were lined up from 5 to 14 Sep 2002. These activities aimed to promote and further the Foundation’s influence on our society, and raise funds for the Foundation to organise more events, so as to help foster the Tan Kah Kee spirit in entrepreneurship and promoting education in this new century."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="2008"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.07"
+            android:text="Tan Kah Kee Foundation signed a 50-year joint venture agreement with the Ee Hoe Hean Club, committing to pay the club S$1 million for using the entire ground floor of the re-constructed Ee Hoe Hean building for 50 years. The Foundation would later go on to set up Pioneers’ Memorial Hall at the premise."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Today"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="10"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.07"
+            android:text="Through these years, the Foundation has been actively engaged in the promotion of education and culture. Its major activities include:\n\n•Tan Kah Kee Postgraduate Scholarship\n•Tan Kah Kee Young Inventors’ Award\n•Tan Kah Kee Public Lectures Series\n•University Endowment Fund\n\nToday, its influence has been extended beyond the Chinese Community in Singapore and has begun to reach out to the region."/>
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#F6B82E"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F6B82E" />
+
+    </LinearLayout>
+</ScrollView>
