@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InternshipProject">
         <activity
+            android:name=".viewWinningProject"
+            android:exported="false" />
+        <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
+            android:name=".uploadSubmission"
+            android:exported="false" />
+        <activity
+            android:name=".registerCompetition"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
             android:name=".homeActivity"
             android:exported="false" />
         <activity
