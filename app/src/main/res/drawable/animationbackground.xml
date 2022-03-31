@@ -2,7 +2,7 @@
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item
     android:drawable="@drawable/schoolone"
-    android:duration="4000"/>
+    android:duration="4000" />
 <item
     android:drawable="@drawable/schooltwo"
     android:duration="4000"/>

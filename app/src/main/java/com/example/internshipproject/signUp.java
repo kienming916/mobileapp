@@ -4,58 +4,74 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
+import com.google.android.material.textfield.TextInputEditText;
+import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class signUp extends AppCompatActivity {
 
-    EditText signupusername, signuppassword, reenterpassword;
-    Button comfirm;
-    DBHelper DB;
-
+    TextInputEditText textInputEditTextFullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextEmail;
+    Button confirm;
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        findViews();
-        setListeners();
-    }
-    private void findViews(){
-        signupusername = (EditText) findViewById(R.id.signupusername);
-        signuppassword = (EditText) findViewById(R.id.signuppassword);
-        reenterpassword = (EditText) findViewById(R.id.reenterpassword);
-        comfirm = (Button) findViewById(R.id.btncomfirm);
-        DB = new DBHelper(this);
-    }
 
-    private void setListeners(){
-        comfirm.setOnClickListener(view -> {
-            String user = signupusername.getText().toString();
-            String pass = signuppassword.getText().toString();
-            String repass = reenterpassword.getText().toString();
+        textInputEditTextFullname = findViewById(R.id.fullname);
+        textInputEditTextUsername = findViewById(R.id.username);
+        textInputEditTextPassword = findViewById(R.id.password);
+        textInputEditTextEmail = findViewById(R.id.email);
+        confirm = findViewById(R.id.btnconfirm);
+        progressBar = findViewById(R.id.progress);
 
-            if(user.equals("")||pass.equals("")||repass.equals("")){
-                Toast.makeText(signUp.this, "Please enter all the field!", Toast.LENGTH_SHORT).show();
-            }else{
-                if (pass.equals(repass)){
-                    Boolean checkuser = DB.checkusername(user);
-                    if(checkuser==false){
-                        Boolean insert = DB.insertData(user, pass);
-                        if (insert== true){
-                            Toast.makeText(signUp.this, "Registration completed.", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(signUp.this,homeActivity.class);
-                            startActivity(intent);
-                        }else{
-                            Toast.makeText(signUp.this, "Registration failed.", Toast.LENGTH_SHORT).show();
+        confirm.setOnClickListener(v -> {
+            String fullname, username, password, email;
+            fullname = String.valueOf(textInputEditTextFullname.getText());
+            username = String.valueOf(textInputEditTextUsername.getText());
+            password = String.valueOf(textInputEditTextPassword.getText());
+            email = String.valueOf(textInputEditTextEmail.getText());
+
+            if(!fullname.equals("") && !username.equals("") && !password.equals("") && !email.equals("")) {
+                progressBar.setVisibility(View.VISIBLE);
+                Handler handler = new Handler();
+                handler.post(() -> {
+                    String[] field = new String[4];
+                    field[0] = "fullname";
+                    field[1] = "username";
+                    field[2] = "password";
+                    field[3] = "email";
+                    String[] data = new String[4];
+                    data[0] = fullname;
+                    data[1] = username;
+                    data[2] = password;
+                    data[3] = email;
+                    PutData putData = new PutData("http://192.168.1.12/Internship/signup.php", "POST", field, data);
+                    if (putData.startPut()) {
+                        if (putData.onComplete()) {
+                            progressBar.setVisibility(View.GONE);
+                            String result = putData.getResult();
+                            if(result.equals("Sign Up Successfully")){
+                                Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(getApplicationContext(), loginPage.class);
+                                startActivity(intent);
+                                finish();
+                            }else{
+                                Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
+                            }
                         }
-                    }else{
-                        Toast.makeText(signUp.this, "User already exists!", Toast.LENGTH_SHORT).show();
                     }
-                }else{
-                    Toast.makeText(signUp.this, "Passwords not matching.", Toast.LENGTH_SHORT).show();
-                }
+                });
+            }else{
+                Toast.makeText(getApplicationContext(),"All fields required", Toast.LENGTH_LONG).show();
             }
         });
+
+
     }
 }

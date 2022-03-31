@@ -4,19 +4,63 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/animationbackground.xml" value="0.2703125" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/animationbackground2.xml" value="0.2703125" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/box.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/gradientbackground.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/gradientblackwhite.xml" value="0.2703125" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/gradientblue.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/gradientpink.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/gradientyello.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/gradientyellow.xml" value="0.26205128205128203" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2601851851851852" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/spinnerbackground.xml" value="0.1545" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/drawable/spinnerbox.xml" value="0.1545" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_about_us.xml" value="0.2" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_about_us_two.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_check_status.xml" value="0.264" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_contact_us.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_how_we_started.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_login_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_login_page.xml" value="0.264" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_main.xml" value="0.2390625" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2012.xml" value="0.25" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2013.xml" value="0.16789087093389296" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2014.xml" value="0.12628255722178375" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2015.xml" value="0.1" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2016.xml" value="0.1" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2017.xml" value="0.1" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2018.xml" value="0.14925373134328357" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_memories2019.xml" value="0.21371326803205698" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_notification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_pdf2012.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_pdf2013.xml" value="0.23425925925925925" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_pdf_web.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_sign_up.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_register_competition.xml" value="0.25" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_register_form1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_register_form2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_register_form3.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_termsandconditions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_view_competition_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_view_winning_project.xml" value="0.264" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/activity_who_we_are.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/appbarhomedrawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/contenthome.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/expandablecontent.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/fragment_page1.xml" value="0.25" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/fragment_page2.xml" value="0.2359375" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/fragment_page3.xml" value="0.2359375" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/listviewcontent.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/listviewpdf.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/listviewtitle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/testing.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/layout/toolbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/menu/menudrawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.262037037037037" />
+        <entry key="..\:/Users/tanki/AndroidStudioProjects/InternshipProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.262037037037037" />
       </map>
     </option>
   </component>

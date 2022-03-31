@@ -3,6 +3,8 @@ package com.example.internshipproject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -14,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class homeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
-    Button register, submission, notification, viewwinningproject, logout;
+    Button register, submission, notification, checkstatus, logout;
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -34,7 +36,7 @@ public class homeActivity extends AppCompatActivity implements BottomNavigationV
         register = (Button) findViewById(R.id.btnregister);
         submission = (Button) findViewById(R.id.btnsubmission);
         notification = (Button) findViewById(R.id.btnnotification);
-        viewwinningproject = (Button) findViewById(R.id.btnviewwinningproject);
+        checkstatus = (Button) findViewById(R.id.btncheckstatus);
         logout = (Button) findViewById(R.id.btnlogout);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigation);
         bottomNavigationView.getMenu().findItem(R.id.home).setChecked(true);
@@ -53,13 +55,12 @@ public class homeActivity extends AppCompatActivity implements BottomNavigationV
             Intent intent = new Intent(homeActivity.this,notification.class);
             startActivity(intent);
         });
-        viewwinningproject.setOnClickListener(view -> {
-            Intent intent = new Intent(homeActivity.this,viewWinningProject.class);
+        checkstatus.setOnClickListener(view -> {
+            Intent intent = new Intent(homeActivity.this,checkStatus.class);
             startActivity(intent);
         });
         logout.setOnClickListener(view -> {
-            Intent intent = new Intent(homeActivity.this,loginPage.class);
-            startActivity(intent);
+            onBackPressed();
         });
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
@@ -73,5 +74,33 @@ public class homeActivity extends AppCompatActivity implements BottomNavigationV
             startActivity(intent);
         }
         return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Logout");
+        builder.setMessage("Are you sure you want to exit?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(homeActivity.this,MainActivity.class);
+                        intent.putExtra("finish", true); // if you are checking for this in your other Activities
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                                Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                                Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }

@@ -3,53 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/interface7"
     android:background="@drawable/gradientbackground"
+    android:screenOrientation="portrait"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="60dp"
         android:orientation="vertical"
-        android:background="@drawable/box"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Welcome to \nTan Kah Kee Tan Lau Sze (TKK) \nYoung Investor Competition \nhomepage"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:shadowColor="@color/white"
-            android:shadowRadius="5"
-            android:shadowDx="1"
-            android:shadowDy="1"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:background="@color/black">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Provided features:"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:text="Home"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold"
             android:shadowColor="@color/white"
             android:shadowRadius="5"
@@ -61,129 +35,185 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:background="@drawable/gradientpink">
 
-        <Button
-            android:id="@+id/btnregister"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:drawableTop="@drawable/ic_baseline_app_registration_24"
-            android:text="\nRegister\ncompetition\n"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:background="#FFFCCF"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/box"
-            android:backgroundTint="#A0BC3A" />
+            android:layout_marginBottom="20dp">
 
-        <Button
-            android:id="@+id/btnsubmission"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:drawableTop="@drawable/ic_baseline_menu_book_24"
-            android:text="\nSubmission\n\n"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/box"
-            android:backgroundTint="#A0BC3A" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to \nTan Kah Kee Tan Lau Sze (TKK) \nYoung Investor Competition \nhomepage"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:shadowColor="@color/white"
+                android:shadowRadius="5"
+                android:shadowDx="1"
+                android:shadowDy="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Provided features:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:shadowColor="@color/white"
+        android:shadowRadius="5"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
 
     </LinearLayout>
 
     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <Button
+        android:id="@+id/btnregister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:drawableTop="@drawable/ic_baseline_app_registration_24"
+        android:text="\nRegister\ncompetition\n"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/box"
+        android:backgroundTint="#A0BC3A" />
+
+        <Button
+            android:id="@+id/btncheckstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/box"
+            android:backgroundTint="#A0BC3A"
+            android:drawableTop="@drawable/ic_baseline_view_list_24"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="\nCheck\nStatus\n"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp">
+
+    <Button
+        android:id="@+id/btnnotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:drawableTop="@drawable/ic_baseline_message_24"
+        android:text="\nNotification\n\n"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_weight="1"
+        android:background="@drawable/box"
+        android:backgroundTint="#A0BC3A" />
 
-        <Button
-            android:id="@+id/btnnotification"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:drawableTop="@drawable/ic_baseline_message_24"
-            android:text="\nNotification\n\n"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/box"
-            android:backgroundTint="#A0BC3A" />
-
-        <Button
-            android:id="@+id/btnviewwinningproject"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:drawableTop="@drawable/ic_baseline_view_list_24"
-            android:text="\nView winning\nproject\n"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/box"
-            android:backgroundTint="#A0BC3A" />
+    <Button
+        android:id="@+id/btnsubmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:drawableTop="@drawable/ic_baseline_menu_book_24"
+        android:text="\nSubmission\n\n"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/box"
+        android:backgroundTint="#A0BC3A" />
 
     </LinearLayout>
 
     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <Button
+        android:id="@+id/btnlogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-
-        <Button
-            android:id="@+id/btnlogout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Logout"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/box"
-            android:backgroundTint="#3CBA66" />
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/box"
+        android:backgroundTint="#3CBA66" />
 
     </LinearLayout>
 
     <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomnavigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/white"
-            app:menu="@menu/menu" />
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/menu" />
 
     </RelativeLayout>
 </LinearLayout>

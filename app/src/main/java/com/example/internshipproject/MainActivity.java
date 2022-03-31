@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button aboutUs, loginpage;
+    Button aboutUs, loginpage, viewwinningproject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private void findViews(){
         aboutUs = (Button) findViewById(R.id.btnaboutus);
         loginpage = (Button) findViewById(R.id.btnloginpage);
+        viewwinningproject = (Button) findViewById(R.id.btnviewwinningproject);
     }
 
     private void setListeners(){
@@ -41,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         });
         loginpage.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,loginPage.class);
+            startActivity(intent);
+        });
+        viewwinningproject.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,viewWinningProject.class);
             startActivity(intent);
         });
     }
